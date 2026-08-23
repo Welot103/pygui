@@ -4,6 +4,11 @@ from ..styles.label_style import LabelStyle
 import pygame
 
 class Label(Widget):
+    """ 
+        Widget for render text. Has line breaks. 
+        Can work with LabelStyle
+    """
+
     def __init__(self, parent = None, width=1, height=1, text="Pygame Gui", style: LabelStyle = None):
         super().__init__(parent, width, height, (0, 0))
         self.text = text

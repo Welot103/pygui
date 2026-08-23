@@ -2,6 +2,7 @@ from __future__ import annotations
 import pygame
 
 class Widget:
+    """ Base class of every pygamegui widget has parent, width, height, margin and render with check_events """
     def __init__(self, parent: Widget = None, width=1, height=1, margin=(0, 0)):
         if parent is not None:
             parent.add_child(self)

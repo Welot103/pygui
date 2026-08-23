@@ -2,6 +2,13 @@ from .abstract_widget import Widget
 import pygame
 
 class Group(Widget):
+    """ 
+        Widget for base allotment of widgets. Allow only in context with.
+        
+        with Group(...) as g0:
+            Widget(g0, ...)
+    """
+    
     def __init__(self, parent: Widget = None, width=1, height=1, vertical = False, margin=(0, 0)):
         super().__init__(parent, width, height, margin)
         self.vertical = vertical
