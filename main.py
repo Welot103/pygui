@@ -19,7 +19,7 @@ with main_group as g0:
             Label(g2_1, text="Приветик!) Если ты это читаешь, то у меня всё получилось.")
     with Size_box(g0, width=2, margin=(2, 2), max_size_px=(200, 300), side="right+bottom") as g1_1:
         with Group(g1_1, margin=(0, 5)) as g2:
-            pass
+            Image(g2, "sexom.jpg")
         with Group(g1_1, margin=(4, 5), height=0.5, width=2) as g2_1:
             with Button(g2_1, on_click=lambda:print("Clicked!")) as b1:
                 Label(b1, text="Кнопка")
