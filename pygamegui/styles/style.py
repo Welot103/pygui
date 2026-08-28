@@ -1,6 +1,10 @@
 from .. import config
 
 class Style:
+    '''
+        The base class for all other style classes.
+        Its doing setattr for self.apply(object) with all kwargs
+    '''
     def __init__(self, **kwargs):
         self.keys = list(kwargs.keys())
         for k, v in kwargs.items():
