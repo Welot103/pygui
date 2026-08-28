@@ -1,3 +1,7 @@
 /epelepsy.py
 /sexom.jpg
 /docs_py.py
+/__pycache__
+/widgets/__pycache__
+/styles/__pycache__
+/.gitignore
